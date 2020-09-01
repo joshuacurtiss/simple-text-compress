@@ -1,0 +1,19 @@
+{
+  "name": "simple-text-compress",
+  "description": "A simple function to handle text compression by character substitution of the most common words.",
+  "author": "Josh Curtiss <josh@curtiss.me>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
