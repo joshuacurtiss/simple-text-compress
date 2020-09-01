@@ -4,6 +4,13 @@
   "author": "Josh Curtiss <josh@curtiss.me>",
   "version": "0.1.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuacurtiss/simple-text-compress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuacurtiss/simple-text-compress/issues"
+  },
   "scripts": {
     "test": "node test"
   },
