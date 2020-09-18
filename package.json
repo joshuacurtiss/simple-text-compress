@@ -2,7 +2,7 @@
   "name": "simple-text-compress",
   "description": "A simple function to handle text compression by character substitution of the most common words.",
   "author": "Josh Curtiss <josh@curtiss.me>",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
