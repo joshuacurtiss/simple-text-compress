@@ -1,12 +1,11 @@
-module.exports = function compress(text) {
+function compress(item) {
+    const text = typeof item === 'string' ? item : JSON.stringify(item);
     // A. Find all the symbols that can be used because they're not in existing text
     const symbols = [];
-    for (let i = 32; i < 384; i += 1) {
+    for (let i = 35; i < 452; i += 1) {
         // Only use a safe range of chars
         if (
             i < 127
-            || (i >= 130 && i <= 140)
-            || (i >= 145 && i <= 156)
             || (i >= 161 && i <= 172)
             || i > 173
         ) {
@@ -38,4 +37,14 @@ module.exports = function compress(text) {
     }
     // E. Return the compressed data and the dictionary
     return { data, dict };
+}
+
+function compressJson(data) {
+    const json = JSON.stringify(data);
+    return compress(json);
+}
+
+module.exports = {
+    compress,
+    compressJson,
 };
