@@ -8,7 +8,7 @@ function decompress(data, dict) {
 
 function decompressJson(data, dict) {
     const json = decompress(data, dict);
-    JSON.parse(json);
+    return JSON.parse(json);
 }
 
 module.exports = {
